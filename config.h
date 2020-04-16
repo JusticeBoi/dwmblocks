@@ -1,12 +1,14 @@
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 static const Block blocks[] = {
 	/*Command*/	/*Update Interval*/	/*Update Signal*/
-	{"cat /tmp/recordingicon 2>/dev/null",	0,	9},
+	/* {"cat /tmp/recordingicon 2>/dev/null",	0,	9}, */
 	{"sound",	0,	5},
 	{"cpuUsage",	1,	4},
-	{"cpuTemp",	1,	4},
-	{"memory",	1,	4},
-	{"clock",	60,	0},
+	{"cpuTemp",	1,	8},
+	{"memory",	1,	7},
+	{"clock",	60,	1},
+	{"internet",	5,	6},
+	{"disk",	15,	9},
 };
 
 //sets delimeter between status commands. NULL character ('\0') means no delimeter.
